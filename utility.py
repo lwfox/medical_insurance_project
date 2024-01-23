@@ -35,7 +35,11 @@ def getCategoryAverage(data_obj):
   average = data_obj['total_cost']/data_obj['count']
   return average
 
+def getAverage(values, count):
+  total = 0
 
-
-
-
+  for value in values:
+    total += float(value)
+  
+  average = total/count
+  return average
